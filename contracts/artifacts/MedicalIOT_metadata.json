@@ -1,0 +1,138 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_patient",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_readings",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_ailment",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_doctor",
+						"type": "string"
+					}
+				],
+				"name": "_initDevice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_device_id",
+						"type": "uint256"
+					}
+				],
+				"name": "readPatientData",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "patient",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "readings",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "ailment",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "doctor",
+								"type": "string"
+							}
+						],
+						"internalType": "struct MedicalIOT.Device",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_device_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_readings",
+						"type": "string"
+					}
+				],
+				"name": "updateReadings",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/test.sol": "MedicalIOT"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/test.sol": {
+			"keccak256": "0x677760d191688ae8875de0a1976df98a6a25ac67f61c5dcf086d5b463950c3ee",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://eabceadc1bf035e996c53361d1e9c9202af3eee3a6f3e42779aa6cbefce8ce80",
+				"dweb:/ipfs/QmQKkkcZh5ZQqoGLvE8LMBFdaBR4Puk1E6BgPYUuHkiWnC"
+			]
+		}
+	},
+	"version": 1
+}
